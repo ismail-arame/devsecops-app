@@ -22,11 +22,11 @@ pipeline {
     stage ('Source-Composition-Analysis'){
       steps{
         sh 'rm owasp* || true'
-        sh 'mkdir -p /report'
+        sh 'mkdir -p ${WORKSPACE}/report'
         sh 'wget "https://raw.githubusercontent.com/ismail-arame/devsecops-app/refs/heads/main/owasp-dependency-check.sh" '
         sh 'chmod +x owasp-dependency-check.sh'
-        sh 'bash owasp-dependency-check.sh --out /report'
-        sh 'ls -la /report'
+        sh 'bash owasp-dependency-check.sh --out ${WORKSPACE}/report'
+        sh 'ls -la ${WORKSPACE}/report'
       }
     }
     stage ('Build'){
