@@ -25,7 +25,6 @@ pipeline {
         sh 'wget "https://raw.githubusercontent.com/ismail-arame/devsecops-app/refs/heads/main/owasp-dependency-check.sh" '
         sh 'chmod +x owasp-dependency-check.sh'
         sh 'bash owasp-dependency-check.sh'
-        sh 'ls -la ${WORKSPACE}/odc-reports'
         sh 'cat ${WORKSPACE}/odc-reports/dependency-check-report.xml'
       }
     }
