@@ -1,5 +1,6 @@
 # Projet DevSecOps : 
-Outils: Jenkins,Tomcat,GithubActions,Git,SCA,Sonarqube,Zap.
+**Outils:** Jenkins,Tomcat,GithubActions,Git,SCA,Sonarqube,Zap.
+
 Application des pratiques DevSecOps pour assurer la sécurité à chaque étape du cycle de développement, avec automatisation des tests et analyse de code, intégrées dans une application Java
 
 ![image](https://github.com/user-attachments/assets/1a0414b4-b25e-4f30-87e6-f0ce97e0498c)
